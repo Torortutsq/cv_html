@@ -23,7 +23,6 @@ Penggunaan elemen semantik membantu aksesibilitas dan **SEO**, serta membuat str
 
 2. Pembahasan
 
-### 2.1 Struktur HTML (Contoh)
 Berikut kerangka halaman CV sederhana menggunakan elemen semantik dan navigasi *in-page*:
 
 ```html
