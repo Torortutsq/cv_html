@@ -141,16 +141,15 @@ Penjelasan Kode : <br>
 
 ---
 
-### 2.2 CSS (Konsep & Contoh)
-#### a) Global dan *Typography*
 ```css
 body { 
   font-family: Arial, sans-serif; 
   line-height: 1.5; 
 }
 ```
+Penjelasan Kode : <br>
+-Menetapkan gaya font default untuk seluruh konten di dalam tag <body> menjadi Arial; jika Arial tidak tersedia, akan menggunakan font generik sans-serif.
 
-#### b) Header
 ```css
 header {
   background-color: lightgray;
@@ -160,11 +159,20 @@ header {
 header h1::first-line { font-size: 140%; font-weight: 800; }
 header p::first-line  { font-variant: small-caps; }
 ```
+Penjelasan Kode : <br>
+-header: Menetapkan latar belakang abu-abu terang (Lightgray), jarak dalam (padding) 20px, dan meratakan teks di dalamnya ke tengah (center) untuk elemen header (kepala halaman/bagian).<br>
+-header h1::first-line: Menggunakan pseudo-element ::first-line untuk membuat baris pertama dari elemen h1 di dalam header menjadi 140% lebih besar dari ukuran font normal dan sangat tebal (800).<br>
+-header p::first-line: Menggunakan ::first-line untuk membuat baris pertama dari paragraf (p) di dalam header menggunakan huruf kapital kecil (small-caps).
 
-#### c) Navigasi
+
 ```css
 .navbar { margin: 14px 0; text-align: center; }
+```
+Penjelasan Kode : <br>
+-margin: 14 0;: Menetapkan margin atas dan bawah 14 unit (kemungkinan dimaksudkan 14px atau unit lain) dan margin kiri-kanan 0.<br>
+-text-align: center;: Memposisikan konten di dalam navbar (yaitu daftar link) di tengah.
 
+```css
 .nav-list {
   list-style: none;
   padding: 0;
@@ -185,8 +193,20 @@ header p::first-line  { font-variant: small-caps; }
   text-decoration: underline;
 }
 ```
+Penjelasan Kode : <br>
+-.nav-list (Tag ul):
+list-style: none;: Menghapus bullet point default dari daftar.
+padding: 0; margin: 0;: Menghilangkan padding dan margin bawaan pada daftar.
+display: inline-block;: Memungkinkan daftar untuk disejajarkan di tengah (berkat text-align: center; pada .navbar) dan tetap memperhitungkan lebar dan tinggi.<br>
+-.nav-item (Tag li):
+display: inline-block;: Mengubah item daftar agar ditampilkan berdampingan (horizontal) alih-alih di baris baru.
+margin: 0 10;: Memberikan sedikit jarak ke kiri dan kanan antar item (kemungkinan dimaksudkan 10px).<br>
+-.nav-link (Tag a):
+text-decoration: none;: Menghapus garis bawah default dari link.
+color: #3f51b5;: Mengatur warna link menjadi biru keunguan gelap.<br>
+-.nav-link:hover: Menetapkan gaya saat kursor mengarah (hover) ke link: latar belakang menjadi warna biru tersebut, teks menjadi putih (#fff), dan garis bawah muncul kembali.
 
-#### d) Section (Box Model)
+
 ```css
 section {
   border: 1px solid #ddd;
@@ -195,14 +215,24 @@ section {
   box-shadow: 0 0 5px #aaa;
 }
 ```
+Penjelasan Kode : <br>
+-border: 1px solid #ddd;: Memberikan garis tepi tipis (1px solid) berwarna abu-abu sangat terang.<br>
+-padding: 15px;: Menambah jarak 15px di dalam setiap section.<br>
+-margin: 20px 0;: Memberikan jarak 20px di atas dan bawah section untuk memisahkannya dari elemen lain.<br>
+-box-shadow: 0 0 5px #aaa;: Menambahkan sedikit efek bayangan lembut berwarna abu-abu ke setiap section, membuatnya tampak menonjol.
 
-#### e) Email (Selektor ID dan Link)
+
 ```css
 #email { font-weight: 700; color: #3f51b5; }
 #email a { text-decoration: none; }
 ```
+Penjelasan Kode : <br>
+-#email (Tag p id="email"):<br>
+-font-weight: 700;: Membuat teks pada paragraf email menjadi tebal.<br>
+-color: #3f51b5;: Mengatur warna teks pada paragraf email menjadi biru keunguan gelap.<br>
+-#email a (Tag <a> di dalam #email):<br>
+-text-decoration: none;: Secara spesifik menghapus garis bawah hanya pada link email di dalam paragraf ini.
 
-#### f) Footer
 ```css
 footer {
   background-color: lightgray;
@@ -210,8 +240,12 @@ footer {
   text-align: center;
 }
 ```
+Penjelasan Kode : <br>
+-background-color: lightgray; - Memberikan warna latar belakang abu-abu muda pada footer <br>
+-padding: 10px; - Memberikan ruang dalam 10px di semua sisi footer <br>
+-text-align: center; - Meratakan semua konten di dalam footer ke tengah
 
-#### g) Selektor Atribut & Pseudo-element
+
 ```css
 /* menambahkan ikon setelah link sosmed tertentu */
 a[href*="instagram.com"]::after { content: "📷"; display: inline-block; font-size: 10px; vertical-align: text-top; }
@@ -220,14 +254,10 @@ a[href*="tiktok.com"]::after    { content: "🎵"; display: inline-block; font-s
 
 ---
 
-## 3. Kesimpulan
+##3. Kesimpulan
 **Semantic HTML** membuat struktur halaman lebih jelas, aksesibel, dan ramah SEO. Dikombinasikan dengan **CSS** (selektor, *box model*, dan *pseudo classes/elements*), tampilan menjadi konsisten, teratur, dan mudah dirawat dibanding hanya mengandalkan `<div>`/`<span>` non-semantik.
 
 ---
 
-## 4. Lampiran
-- Tambahkan tangkapan layar hasil halaman, atau *link* demo bila tersedia.
-- Simpan CSS ke berkas terpisah (`style.css`) untuk pemeliharaan yang lebih baik.
-```html
-<link rel="stylesheet" href="style.css" />
-```
+##4. Lampiran
+<img width="1470" height="838" alt="Tangkapan Layar 2025-09-26 pukul 21 52 23" src="https://github.com/user-attachments/assets/79512469-6404-4a5f-b015-355e89131220" />
