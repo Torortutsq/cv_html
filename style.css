@@ -1,0 +1,84 @@
+body {
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    }
+
+    header h1::first-line {
+    font-size: 140%;
+    font-weight: 800;
+    }
+
+    header p::first-line {
+    font-variant: small-caps;
+    }
+
+    .navbar {
+    margin: 14 0;
+    text-align: center;
+    }
+
+    .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    }
+
+    .nav-item {
+    display: inline-block;
+    margin: 0 10;
+    }
+
+    .nav-link {
+    text-decoration: none;
+    color: #3f51b5;
+    }
+
+    .nav-link:hover {
+    background: #3f51b5;
+    color: #fff;
+    text-decoration: underline;
+    }
+
+    section {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 0 5px #aaa;
+    }
+
+    #email {
+    font-weight: 700;
+    color: #3f51b5;
+    }
+
+    #email a {
+    text-decoration: none;
+    }
+
+    footer {
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+    }
+
+    a[href*="instagram.com"]::after {
+    content: " ↗";
+    display: inline-block;
+    color: #fff;
+    font-size: 10px;
+    vertical-align: text-top;
+    }
+
+    a[href*="tiktok.com"]::after {
+    content: " ↗";
+    display: inline-block;
+    color: #fff;
+    font-size: 10px;
+    vertical-align: text-top;
+    }
