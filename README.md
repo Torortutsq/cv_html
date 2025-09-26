@@ -139,11 +139,6 @@ Penjelasan Kode : <br>
 </footer>
 ```
 
-**Penjelasan singkat:**
-- `<nav class="navbar">` membungkus navigasi utama. Tautan pada `<a href="#...">` menargetkan `<section id="...">` terkait.  
-- `id="email"` memberi *hook* spesifik untuk styling.  
-- Setiap `<section>` bertema jelas dan memiliki heading (`<h2>`).
-
 ---
 
 ### 2.2 CSS (Konsep & Contoh)
