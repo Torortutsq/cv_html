@@ -7,7 +7,7 @@
 
 ---
 
-## 1. Pendahuluan
+1. Pendahuluan
 **Semantic HTML** adalah praktik penggunaan markup HTML yang memberi makna jelas terhadap tipe konten sehingga browser, pembaca layar (assistive technologies), dan mesin pencari dapat memahami konteks serta struktur halaman web dengan lebih baik.  
 Contoh elemen semantik yang umum digunakan antara lain:
 
@@ -21,7 +21,7 @@ Penggunaan elemen semantik membantu aksesibilitas dan **SEO**, serta membuat str
 
 ---
 
-## 2. Pembahasan
+2. Pembahasan
 
 ### 2.1 Struktur HTML (Contoh)
 Berikut kerangka halaman CV sederhana menggunakan elemen semantik dan navigasi *in-page*:
@@ -254,10 +254,10 @@ a[href*="tiktok.com"]::after    { content: "🎵"; display: inline-block; font-s
 
 ---
 
-##3. Kesimpulan
+3. Kesimpulan
 **Semantic HTML** membuat struktur halaman lebih jelas, aksesibel, dan ramah SEO. Dikombinasikan dengan **CSS** (selektor, *box model*, dan *pseudo classes/elements*), tampilan menjadi konsisten, teratur, dan mudah dirawat dibanding hanya mengandalkan `<div>`/`<span>` non-semantik.
 
 ---
 
-##4. Lampiran
+4. Lampiran
 <img width="1470" height="838" alt="Tangkapan Layar 2025-09-26 pukul 21 52 23" src="https://github.com/user-attachments/assets/79512469-6404-4a5f-b015-355e89131220" />
